@@ -18,7 +18,7 @@ namespace TimeToGo.Api.Controllers
             _flightService = flightService;
         }
 
-        [HttpGet("{airport}&{howMany}&{filter}&{offset}")]
+        [HttpGet("get/flights/{airport}&{howMany}&{filter}&{offset}")]
         public async Task<OkObjectResult> GetFlight(string aiport, int howMany, string filter, int offset)
         {
             var result = await _flightService.GetFlightFromParameters(aiport, howMany, filter, offset);
