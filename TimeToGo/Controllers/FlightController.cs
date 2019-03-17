@@ -27,3 +27,9 @@ namespace TimeToGo.Api.Controllers
         }
     }
 }
+
+static void Main(string[] args)
+    {
+        return Ok(args)
+
+}
